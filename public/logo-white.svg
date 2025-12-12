@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="CoreHouse Academy logo">
+  <!-- Transparent background, white artwork for use on colored sections -->
+  <!-- Outer circle removed to keep background transparent -->
+
+  <!-- Inner Teal Circle replaced with subtle white ring (or removed) -->
+  <!--<circle cx="250" cy="250" r="200" fill="#fff" stroke="none"/>-->
+
+  <!-- Decorative Wave Pattern (white strokes) -->
+  <g opacity="0.35" stroke="#ffffff" fill="none" stroke-width="1.5">
+    <path d="M 150 100 Q 165 95 180 100 T 210 100 T 240 100 T 270 100 T 300 100 T 330 100 T 360 100"/>
+    <path d="M 140 120 Q 155 115 170 120 T 200 120 T 230 120 T 260 120 T 290 120 T 320 120 T 350 120"/>
+    <path d="M 130 140 Q 145 135 160 140 T 190 140 T 220 140 T 250 140 T 280 140 T 310 140 T 340 140 T 370 140"/>
+    <path d="M 120 160 Q 135 155 150 160 T 180 160 T 210 160 T 240 160 T 270 160 T 300 160 T 330 160 T 360 160 T 390 160"/>
+  </g>
+
+  <!-- White Center Circle (keeps contrast) -->
+  <circle cx="250" cy="250" r="155" fill="white" stroke="none"/>
+
+  <!-- House Icon (white fill) -->
+  <g transform="translate(250, 140)" fill="#ffffff">
+    <path d="M -45 10 L 0 -25 L 45 10 L 35 10 L 35 15 L -35 15 L -35 10 Z"/>
+    <rect x="-30" y="15" width="60" height="40"/>
+  </g>
+
+  <!-- Window (secondary color replaced with transparent cutout to show background) -->
+  <rect x="245" y="167" width="10" height="10" fill="none"/>
+
+  <!-- CORE HOUSE Text (white) -->
+  <text x="250" y="235" font-family="Arial, sans-serif" font-size="48" font-weight="700"
+        fill="#ffffff" text-anchor="middle">CORE</text>
+  <text x="250" y="285" font-family="Arial, sans-serif" font-size="48" font-weight="700"
+        fill="#ffffff" text-anchor="middle">HOUSE</text>
+
+  <!-- Lotus Flower (white) -->
+  <g transform="translate(250, 340)" fill="#ffffff">
+    <ellipse cx="0" cy="0" rx="15" ry="35"/>
+    <ellipse cx="-25" cy="5" rx="15" ry="35" transform="rotate(-30 -25 5)"/>
+    <ellipse cx="25" cy="5" rx="15" ry="35" transform="rotate(30 25 5)"/>
+    <ellipse cx="-40" cy="15" rx="12" ry="30" transform="rotate(-50 -40 15)"/>
+    <ellipse cx="40" cy="15" rx="12" ry="30" transform="rotate(50 40 15)"/>
+  </g>
+</svg>

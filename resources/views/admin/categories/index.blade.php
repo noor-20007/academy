@@ -1,0 +1,38 @@
+@extends('layouts.admin')
+
+@section('title', 'إدارة التصنيفات')
+@section('header', 'إدارة التصنيفات')
+
+@section('content')
+<div class="mb-4">
+    <a href="/admin/categories/create" class="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90"><i class="fas fa-plus ml-1"></i> إضافة تصنيف</a>
+</div>
+
+<div class="bg-white rounded-lg shadow overflow-hidden">
+    <table class="w-full">
+        <thead class="bg-gray-100">
+            <tr>
+                <th class="px-6 py-3 text-right">الاسم</th>
+                <th class="px-6 py-3 text-right">عدد الكورسات</th>
+                <th class="px-6 py-3 text-right">الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($categories as $category)
+            <tr class="border-t">
+                <td class="px-6 py-4">{{ $category->name }}</td>
+                <td class="px-6 py-4">{{ $category->courses_count }}</td>
+                <td class="px-6 py-4">
+                    <a href="/admin/categories/{{ $category->id }}/edit" class="text-blue-600 hover:underline ml-3">تعديل</a>
+                    <form method="POST" action="/admin/categories/{{ $category->id }}" class="inline">
+                        @csrf
+                        @method('DELETE')
+                        <button onclick="return confirm('متأكد من الحذف؟')" class="text-red-600 hover:underline">حذف</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+@endsection

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Outer Orange Circle -->
+  <circle cx="250" cy="250" r="230" fill="#F5A623" stroke="none"/>
+
+  <!-- Inner Teal Circle with Pattern -->
+  <circle cx="250" cy="250" r="200" fill="#2B7A78" stroke="none"/>
+
+  <!-- Decorative Wave Pattern -->
+  <g opacity="0.3">
+    <path d="M 150 100 Q 165 95 180 100 T 210 100 T 240 100 T 270 100 T 300 100 T 330 100 T 360 100"
+          stroke="#17A2B8" fill="none" stroke-width="1.5"/>
+    <path d="M 140 120 Q 155 115 170 120 T 200 120 T 230 120 T 260 120 T 290 120 T 320 120 T 350 120"
+          stroke="#17A2B8" fill="none" stroke-width="1.5"/>
+    <path d="M 130 140 Q 145 135 160 140 T 190 140 T 220 140 T 250 140 T 280 140 T 310 140 T 340 140 T 370 140"
+          stroke="#17A2B8" fill="none" stroke-width="1.5"/>
+    <path d="M 120 160 Q 135 155 150 160 T 180 160 T 210 160 T 240 160 T 270 160 T 300 160 T 330 160 T 360 160 T 390 160"
+          stroke="#17A2B8" fill="none" stroke-width="1.5"/>
+
+    <!-- Circular waves -->
+    <circle cx="180" cy="130" r="15" fill="none" stroke="#17A2B8" stroke-width="1.5"/>
+    <circle cx="180" cy="130" r="20" fill="none" stroke="#17A2B8" stroke-width="1"/>
+    <circle cx="320" cy="150" r="18" fill="none" stroke="#17A2B8" stroke-width="1.5"/>
+    <circle cx="250" cy="110" r="12" fill="none" stroke="#17A2B8" stroke-width="1"/>
+  </g>
+
+  <!-- White Center Circle -->
+  <circle cx="250" cy="250" r="155" fill="white" stroke="none"/>
+
+  <!-- House Icon -->
+  <g transform="translate(250, 140)">
+    <!-- Roof -->
+    <path d="M -45 10 L 0 -25 L 45 10 L 35 10 L 35 15 L -35 15 L -35 10 Z" fill="#F5A623"/>
+    <!-- House Body -->
+    <rect x="-30" y="15" width="60" height="40" fill="#F5A623"/>
+    <!-- Window -->
+    <rect x="-5" y="27" width="10" height="10" fill="white"/>
+    <line x1="0" y1="27" x2="0" y2="37" stroke="#F5A623" stroke-width="2"/>
+    <line x1="-5" y1="32" x2="5" y2="32" stroke="#F5A623" stroke-width="2"/>
+  </g>
+
+  <!-- CORE HOUSE Text -->
+  <text x="250" y="235" font-family="Arial, sans-serif" font-size="52" font-weight="bold"
+        fill="#2B7A78" text-anchor="middle">CORE</text>
+  <text x="250" y="285" font-family="Arial, sans-serif" font-size="52" font-weight="bold"
+        fill="#2B7A78" text-anchor="middle">HOUSE</text>
+
+  <!-- Lotus Flower -->
+  <g transform="translate(250, 340)">
+    <!-- Center petal -->
+    <ellipse cx="0" cy="0" rx="15" ry="35" fill="#F5A623"/>
+    <!-- Left petal -->
+    <ellipse cx="-25" cy="5" rx="15" ry="35" fill="#F5A623" transform="rotate(-30 -25 5)"/>
+    <!-- Right petal -->
+    <ellipse cx="25" cy="5" rx="15" ry="35" fill="#F5A623" transform="rotate(30 25 5)"/>
+    <!-- Far left petal -->
+    <ellipse cx="-40" cy="15" rx="12" ry="30" fill="#F5A623" transform="rotate(-50 -40 15)"/>
+    <!-- Far right petal -->
+    <ellipse cx="40" cy="15" rx="12" ry="30" fill="#F5A623" transform="rotate(50 40 15)"/>
+  </g>
+</svg>
